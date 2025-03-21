@@ -1,26 +1,74 @@
-# ERP Agricole
+# Structure du Projet ERP Agricole
 
-Système de gestion spécialisé pour les équipements agricoles, la maintenance préventive et le suivi des interventions adapté au contexte agricole.
+## Organisation des modules
 
-## Objectif
+Le projet est organisé en modules fonctionnels distincts, chacun avec sa propre structure de code :
 
-Ce projet vise à développer un ERP complet pour répondre aux besoins spécifiques des exploitations agricoles dans la gestion de leur parc matériel, en intégrant les contraintes saisonnières et les spécificités du domaine agricole.
+### 1. Module Catalogue (/catalogue)
+- API de gestion du catalogue de pièces
+- Système de références croisées
+- Import/export des données fournisseurs
 
-## Modules principaux
-
-- Gestion du catalogue des pièces agricoles
+### 2. Module Équipements (/equipements)
 - Gestion des machines et équipements
-- Maintenance préventive adaptée aux cycles agricoles
-- Gestion des stocks spécifique à l'agriculture
-- Suivi des interventions sur le terrain
-- Gestion des coûts adaptée au contexte agricole
-- Intégration avec les activités agricoles
-- Gestion des fournisseurs spécialisés
-- Traçabilité adaptée aux normes agricoles
-- Optimisation de la durée de vie des équipements
-- Outils d'aide à la décision
-- Support mobile adapté au terrain
+- Suivi des compteurs et métriques
+- Intégration des données télématiques
 
-## Statut du projet
+### 3. Module Maintenance (/maintenance)
+- Planification adaptée aux cycles agricoles
+- Moteur de règles pour maintenance préventive
+- Alertes et notifications
 
-En phase de développement initial.
+### 4. Module Stocks (/stocks)
+- Gestion multi-site des stocks
+- Prévisions saisonnières
+- Approvisionnement intelligent
+
+### 5. Module Interventions (/interventions)
+- Application mobile de terrain
+- Suivi des interventions
+- Synchronisation et mode hors-ligne
+
+### 6. Module Coûts (/couts)
+- Comptabilité analytique
+- Tableaux de bord financiers
+- Analyses de rentabilité
+
+### 7. Module Agronomique (/agronomie)
+- Intégration avec gestion parcellaire
+- Liaison machines-parcelles-opérations
+- Métriques de performance agronomique
+
+### 8. Module Fournisseurs (/fournisseurs)
+- Gestion des contrats de service
+- Évaluation des fournisseurs
+- Planification des interventions externes
+
+### 9. Module Traçabilité (/tracabilite)
+- Journal des interventions
+- Conformité réglementaire
+- Système d'audit
+
+### 10. Module Prédictif (/predictif)
+- Analyse prédictive de l'usure
+- Optimisation de la durée de vie
+- Recommandations de maintenance
+
+### 11. Module Décisionnel (/decisionnel)
+- Tableaux de bord décisionnels
+- Système d'alertes intelligentes
+- Rapports et analyses
+
+### 12. Module Mobile (/mobile)
+- Applications terrain
+- Interface adaptée aux conditions agricoles
+- Synchronisation intelligente
+
+## Technologies envisagées
+
+- Backend: Node.js avec Express ou Django (Python)
+- Frontend: React ou Vue.js
+- Mobile: React Native ou Progressive Web App
+- Base de données: PostgreSQL
+- Stockage de fichiers: AWS S3 ou équivalent
+- CI/CD: GitHub Actions
